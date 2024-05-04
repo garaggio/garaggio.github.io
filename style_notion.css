@@ -1,0 +1,77 @@
+:root {
+    --maincolor: #154c79;
+    --secondarycolor: #554c79;
+    --black:rgb(34, 34, 34);
+    --white: azure;
+}
+
+/* <link rel="stylesheet" href="../style_notion.css"> */  
+
+html,
+body {
+    scroll-behavior: smooth;
+    background-color: azure;
+    scrollbar-width: none;  /* Firefox */
+}
+
+p,
+h1,
+h2,
+h3,
+li,
+blockquote,
+th,
+td,
+h4 {
+    color: var(--maincolor);
+}
+
+p {
+    font-size: 1.2rem;
+}
+h1{
+    font-size: 4rem;
+}
+
+.block-color-gray_background {
+	background: azure;
+    border-radius:5px;
+    padding: 1rem;
+    padding-left: 1rem;
+    outline: 2px dotted #154c79;
+
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    
+}
+
+
+@media only screen and (max-width: 1000px) {
+
+h1,
+h2,
+h3,
+h4 {
+    font-size: 4rem;
+    padding-left: 2rem;
+}
+
+.page-title {
+	font-size: 2rem;
+    padding-left: 2rem;
+}
+
+p,
+ul,
+li {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    font-size: 1rem;
+}
+
+}
